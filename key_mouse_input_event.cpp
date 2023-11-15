@@ -50,7 +50,6 @@ int main()
             if (event.type == sf::Event::Closed)
                 window.close();
         }
-
         sf::Vector2i mousePosition = sf::Mouse::getPosition(window);
 
         std::string mousePositionString = "Mouse Position: (" + std::to_string(mousePosition.x) + ", " + std::to_string(mousePosition.y) + ")";
