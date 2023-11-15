@@ -1,3 +1,5 @@
+# SFML config 
+
 all: compile link run
 
 compile:
