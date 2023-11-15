@@ -15,7 +15,7 @@ int main()
     triangle.setOutlineThickness(5.f);
     triangle.setOutlineColor(sf::Color::Cyan);
     triangle.move(500.f,0.0f);
-
+    
 
     while (window.isOpen())
     {
