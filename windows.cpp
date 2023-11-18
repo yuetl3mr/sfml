@@ -14,7 +14,8 @@ int main()
     triangle.sf::CircleShape::setPointCount(4);
     triangle.setOutlineThickness(5.f);
     triangle.setOutlineColor(sf::Color::Cyan);
-    triangle.move(500.f,0.0f);
+    triangle.setRotation(45);
+    triangle.move(50.f,0.0f);
     
 
     while (window.isOpen())
