@@ -8,6 +8,8 @@ using namespace sf;
 
 int main() {
     RenderWindow window(VideoMode(900, 900), "Texture", Style::Close);
+    //sf::RenderWindow ErrWindow(sf::VideoMode(600, 130, 32), "ERROR!", sf::Style::Close);
+
     HWND hwnd = window.getSystemHandle();
     LONG_PTR style = GetWindowLongPtr(hwnd, GWL_STYLE);
     style |= WS_BORDER;
@@ -70,7 +72,9 @@ int main() {
 
         window.clear();
         window.draw(loginScreen);
+        //ErrWindow.display();
         //window.draw(mousePositionText);
+        //MessageBoxA(NULL, "text", "Title!!", MB_OKCANCEL | MB_ICONEXCLAMATION);
         window.draw(loginButton); 
         window.display();
     }
