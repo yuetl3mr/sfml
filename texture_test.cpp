@@ -25,11 +25,9 @@ int main() {
     loginscrTexture.loadFromFile("../Texture/loginscr.jpg");
     Sprite loginScreen(loginscrTexture);
     
-    Texture loginbtTexture;
-    loginbtTexture.loadFromFile("../Texture/loginbutton.png");
-    Sprite loginButton(loginbtTexture);
+    RectangleShape loginButton(Vector2f(179.f, 52.f));
     loginButton.setPosition(385, 580); // Đặt vị trí cho button
-
+    loginButton.setFillColor(Color::Transparent);
     String userInput;
     Text userText("", font, 20);
     userText.setPosition(60, 300);
@@ -73,7 +71,7 @@ int main() {
         window.clear();
         window.draw(loginScreen);
         //ErrWindow.display();
-        //window.draw(mousePositionText);
+        window.draw(mousePositionText);
         //MessageBoxA(NULL, "text", "Title!!", MB_OKCANCEL | MB_ICONEXCLAMATION);
         window.draw(loginButton); 
         window.display();
